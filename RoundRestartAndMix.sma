@@ -11,7 +11,7 @@ enum _:IntCvar {
 };
 new g_cvars[IntCvar], Round;
 new bool:g_LastRound;
-new const server[] = "TIM";
+new const server[] = "TAG";
 
 public plugin_init() {
     register_plugin("Takim Karistirma Ve Round Restart", "1.1", "Persians");
