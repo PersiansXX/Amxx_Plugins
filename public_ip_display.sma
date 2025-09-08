@@ -1,0 +1,1 @@
+#include <amxmodx>\n#include <fakemeta>\n\npublic plugin_init() {\n    register_plugin("Public IP Display", "1.0", "Your Name");\n    register_clcmd("say /publicip", "cmd_public_ip");\n}\n\npublic cmd_public_ip(id) {\n    new ip[16];\n    get_user_ip(id, ip, sizeof(ip));\n    client_print(id, print_chat, "Your public IP address is: %s", ip);\n}
